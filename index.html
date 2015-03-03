@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Java Hack</title>
+    
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body ng-app="app">
+  
+   <div class="page" ng-controller="PageCtrl">
+   
+   <div class="single-pro" style="text-align: center;">
+   	<img src="img/christ.JPG" style="margin-bottom: 260px; margin-top: 70px;">
+   	
+   	
+   	<h2 style="margin-bottom: 60px;">Java Programming Lab</h2>
+   
+   	<p style="margin-bottom: 60px; font-size: 20px;">by</p>
+   	
+   	<p style="margin-bottom: 140px; font-size: 20px;">
+		<span contenteditable="true">Enter your name.</span>
+		</br>
+		<span contenteditable="true">and you roll no. too!</span> 
+	</p>
+	
+	<p style="margin-bottom: 200px; width: 600px; margin-left: auto; margin-right: auto; font-size: 20px;">
+		A laboratory record submitted in partial fulfillment of the requirements of the Java Programming Lab of IV Semester 
+Bachelor of Computer Applications, Christ University
+	</p>
+  
+   </div>
+   
+   <div class="single-pro" style="text-align: center;">
+   	<img src="img/christ.JPG" style="margin-bottom: 160px; margin-top: 70px;">
+   	
+   	
+   	<h1 style="margin-bottom: 60px; text-decoration: underline;">CERTIFICATE</h1>
+   	
+   	<p style="font-size: 24px; width: 600px; margin-right: auto; margin-left: auto; line-height: 35px; text-align: justify; margin-bottom: 200px;">
+   	
+   		This is to certify that the record titled Java Programming Lab is a bona fide record of work done by <span contenteditable="true">Enter Name</span> (<span contenteditable="true">Roll No.</span> ) of Christ University, Bangalore, in partial fulfillment of the requirements of IV Semester BCA during the year 2014-15
+   		
+   	</p>
+   	
+   	<table style="text-align: left; font-size: 20px; font-weight: bold; width: 100%; margin-top: 100px; margin-bottom: 200px;">
+   		<tr>
+   		<td>
+   			Head of the Department
+   		</td>
+   		<td>
+   			Feculty-in-Charge
+   		</td>   			
+   		</tr>
+   		<tr>
+   			<td>Valued By: </br>
+		1). </br>
+  			2).
+   			</td>
+   			<td>
+   				<table border="0" style="width: 100%; font-size: 15px;">
+   					<tr>
+   						<td width="200px">Name</td>
+   						<td>Enter Name</td>
+   					</tr>
+   					<tr>
+   						<td width="200px">Registration No.</td>
+   						<td>Enter Reg No.</td>
+   					</tr><tr>
+   						<td width="200px">Examination Center</td>
+   						<td>Christ University</td>
+   					</tr>
+   					
+   					
+   				</table>
+   				
+   			</td>
+   		</tr>
+   		
+   	</table>
+   	
+   </div>
+   
+   
+   <div class="single-pro">
+   <h2 style="text-align: center;">Table of Contents</h2>
+  
+  <table id="toc">
+  	<tr>
+  		<th>Program No.</th>
+  		<th>Program Name</th>
+  		<th>Date</th>
+  		<th>Page No.</th>
+  	</tr>
+  	
+  	<tr ng-repeat="r in programs">
+  		<td id="cen">{{$index+1}}</td>
+  		<td contenteditable="true">{{programs[$index]}}</td>
+  		<td contenteditable="true">{{dates[$index]}}</td>
+  		<td contenteditable="true">0-1</td>
+  	</tr>
+  	
+  </table>
+  
+   </div>
+  		<div ng-repeat="p in programs" class="page-repeater">
+  		<div class="single-pro">
+   		<h5>Java Programming Lab</h5>
+   		<table border="0">
+   			<tr>
+   				<td width="160px">Program Number</td>
+   				<td> : {{$index + 1}}</td>
+   			</tr>
+   			<tr>
+   				<td width="160px">Program Name</td>
+   				<td>: {{programs[$index]}}</td>
+   			</tr>
+   			<tr>
+   				<td width="160px">Author Name</td>
+   				<td>: {{author_name}}</td>
+   			</tr>
+   			
+   			<tr>
+   				<td width="160px">Date Done</td>
+   				<td contenteditable="true">: {{dates[$index]}}</td>
+   			</tr>
+   		</table>
+   		<hr>
+   		<p>/**********************************************************************</p>
+	    <p>* Author : <span contenteditable="true">{{author_name}}</span></p>
+		<p>* Date Started : <span contenteditable="true"> {{dates[$index]}} </span></p>
+   		<p>**********************************************************************/</p>
+   		<pre contenteditable="true" class="code-holder code-id-{{$index+1}}">
+   		{{getPro($index+1)}} 
+   		{{pData}}
+   		</pre> 		
+   		<h4 style="text-decoration: underline;">Output</h4>
+  		<div class="center-block">
+   			<pre contenteditable="true" style="margin-bottom: 150px;">
+Paste your output here...
+   			</pre>
+   			
+   			
+			</div> 
+   		</div>
+	   </div>
+   </div>
+   <h5 style="text-align: center;">With &hearts; Codians.</h5>
+   <script src="js/jquery.js"></script>
+</body>
+</html>
