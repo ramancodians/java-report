@@ -96,14 +96,14 @@ March-2015
    <h2 style="text-align: center;">Table of Contents</h2>
   
   <table id="toc">
-  	<tr>
-  		<th>Program No.</th>
+  	<tr style='font-size: 14pt;'>
+  		<th>Program Number</th>
   		<th>Program Name</th>
   		<th>Date</th>
   		<th>Page No.</th>
   	</tr>
   	
-  	<tr ng-repeat="r in programs">
+  	<tr ng-repeat="r in programs" style='font-size: 12pt;'>
   		<td id="cen">{{$index+1}}</td>
   		<td contenteditable="true">{{programs[$index]}}</td>
   		<td contenteditable="true">{{dates[$index]}}</td>
@@ -136,15 +136,17 @@ March-2015
    			</tr>
    		</table>
    		<hr>
+      <strong>
    		<p>/**********************************************************************</p>
 	    <p>* Author : <span contenteditable="true">{{author_name}}</span></p>
 		<p>* Date Started : <span contenteditable="true"> {{dates[$index]}} </span></p>
    		<p>**********************************************************************/</p>
+      </strong>
    		<pre contenteditable="true" class="code-holder code-id-{{$index+1}}">
    		{{getPro($index+1)}} 
    		{{pData}}
    		</pre> 		
-   		<h4 style="text-decoration: underline;">Output</h4>
+   		<h4 style="text-decoration: underline;">OUTPUT:</h4>
   		<div class="center-block">
    			<pre contenteditable="true" style="margin-bottom: 150px;">
 Paste your output here...
@@ -155,7 +157,11 @@ Paste your output here...
    		</div>
 	   </div>
    </div>
-   <h5 style="text-align: center;">With &hearts; Codians.</h5>
+
+  <!-- 
+    Students will get screwed up if teachers see this. Location matters!!
+    <h5 style="text-align: center;">With &hearts; Codians.</h5> 
+  -->
    <script src="js/jquery.js"></script>
 </body>
 </html>
