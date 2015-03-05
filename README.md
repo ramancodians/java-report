@@ -10,7 +10,9 @@ Report generator for Christ University BCA
 - Step 5. Set the $scope.author_name in js/app.js.
 - Step 6. Save all the changes and start XAMP/WAMP.
 - Step 7. Make necessary changes in Chrome.
-- Step 8. Ctrl + P and Save it as PDF.
-
-
-
+- Step 8. Ctrl + P and select Save it as PDF.
+- Step 9: For the header and footer, set the options as follows:
+- **Header (Left):** Java Programming Lab
+- **Header(Right):** Page # of #
+- **Footer (Left):** Depatrment of Computer Science, Christ University
+- The remaining options should be left blank.
